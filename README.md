@@ -54,8 +54,22 @@ git clone https://github.com/Kyara0797/Collabotators_with_Python_and_DB_Postgres
 cd Collabotators_with_Python_and_DB_Postgres
 ```
 2. **Create a virtual environment:**
+
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate 
+
 3. **Install the dependencies:**
+
+pip install -r requirements.txt
+
 4. **Set up your .env file:**
+
+DB_NAME=your_database
+DB_USER=your_user
+DB_PASSWORD=your_password
+DB_HOST=your_host
+DB_PORT=5432
+You can use .env.example as a reference.
 
 🧪 Running the App
 python collaborators_application.py
